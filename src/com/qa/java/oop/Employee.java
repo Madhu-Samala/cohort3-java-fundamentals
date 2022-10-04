@@ -12,6 +12,10 @@ public class Employee {
 	char gender;
 	float incrementPercentage;
 	
+	static final String COMPANY_NAME = "QA"; // class specific
+	static final double COMPANY_REVENUE = 43534534.345;
+	static final String COMPANY_EMAIL = "contact@qa.com";
+	
 	//No-arg Constructor
 	Employee(){
 		System.out.println("Employee() constructor is called...");
@@ -61,5 +65,11 @@ public class Employee {
 	 */
     float totalSalary() {
     	return salary + incrementedSalary();
+    }
+    
+    static void companyInfo() {
+    	System.out.println("Company Name : " + COMPANY_NAME);
+    	System.out.println("Company Annual Revenue : " + COMPANY_REVENUE);
+    	System.out.println("Company Contact Email : " + COMPANY_EMAIL);
     }
 }
