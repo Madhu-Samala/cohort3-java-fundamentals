@@ -17,5 +17,19 @@ public class ArrayUtil {
 			salaries[index] = salaries[index] + (salaries[index] * 10 / 100 );
 		}
 	}
+	
+	
+	//Method Who is drawing highest salary
+	Employee getEmployeeWithHighestSalary(Employee[] emps) {
+		Employee employee = emps[0];
+		float highestSalary = emps[0].totalSalary();
+		for(Employee emp : emps) {
+			if(emp.totalSalary() > highestSalary) {
+				employee = emp;
+				highestSalary = emp.totalSalary();
+			}
+		}
+		return employee;
+	}
 
 }
