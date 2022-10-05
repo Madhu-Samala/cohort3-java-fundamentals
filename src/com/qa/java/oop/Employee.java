@@ -65,7 +65,7 @@ public class Employee {
 	 */
     float totalSalary() {
     	return salary + incrementedSalary();
-    }
+    } 
     
     static void companyInfo() {
     	System.out.println("Company Name : " + COMPANY_NAME);
