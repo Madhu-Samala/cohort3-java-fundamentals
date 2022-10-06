@@ -20,9 +20,13 @@ public class OracleDb extends Database {
 	}
 	
 	
-	void displayOracleDbInfo() {
-		displayDatabaseInfo();
+	void displayDatabaseInfo() {
+		super.displayDatabaseInfo();
 		System.out.println("Max No Of Users Allowed : " + maxNoOfUsersAllowed);
+	}
+	
+	String getDbConnection() {
+		return "connected -> Oracle";
 	}
 	
 	

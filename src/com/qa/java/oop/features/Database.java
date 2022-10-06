@@ -20,12 +20,20 @@ public class Database {
 		this.password = password;
 	}
 	
+	String getDbConnection() {
+		return "connected -> Database";
+	}
+	
 	void displayDatabaseInfo() {
 		System.out.println("Database Url : " + url);
 		System.out.println("Database Name : " + dbName);
 		System.out.println("Database Port : " + port);
 		System.out.println("Database Username : " + username);
 		System.out.println("Database Password : " + password);
+	}
+	
+	void displayDatabaseInfo(String dbName) {
+		System.out.println("displaying database with databasename : " + dbName);
 	}
 	
 	

@@ -19,10 +19,12 @@ public class MySQLDb extends Database {
 		this.maxConnectionPool = maxConnectionPool;
 	}
 	
-	void displayMySQLDbInfo() {
-		displayDatabaseInfo();
+	void displayDatabaseInfo() {
+		super.displayDatabaseInfo();
 		System.out.println("Max Connection Pool : " + maxConnectionPool);
 	}
 	
-	
+	String getDbConnection() {
+		return "connected -> MySQL";
+	}
 }
