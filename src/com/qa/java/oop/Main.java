@@ -1,22 +1,20 @@
 package com.qa.java.oop;
 
 public class Main {
-	
-	
 
 	public static void main(String[] args) {
-		//create an object
-		
+		// create an object
+
 		System.out.println("Company Name : " + Employee.COMPANY_NAME);
 		Employee.companyInfo();
-		
+
 		Employee emp1;
-		emp1 = new Employee(111,"emp1",10000.34f,"development",(byte)25,'M',8.5f);
-		
+		emp1 = new Employee(111, "emp1", 10000.34f, "development", (byte) 25, 'M', 8.5f);
+
 		System.out.println(emp1.name);
 		System.out.println(emp1.salary);
 		System.out.println(emp1.name + "'s company : " + emp1.COMPANY_NAME);
-		//emp1.companyName = "QA Pvt Ltd"; NOT ALLOWED
+		// emp1.companyName = "QA Pvt Ltd"; NOT ALLOWED
 		/*
 		 * emp1.id = 111; emp1.name = "emp1"; emp1.department = "development"; emp1.age
 		 * = 25; emp1.salary = 34534.34f; emp1.gender = 'M';
@@ -27,16 +25,15 @@ public class Main {
 		 * System.out.println("Salary : " + emp1.salary); System.out.println("Age : " +
 		 * emp1.age); System.out.println("Gender : " + emp1.gender);
 		 */
-		
+
 		emp1.displayEmpInfo();
-		
+
 		float incrementedSalary = emp1.incrementedSalary();
 		System.out.println("Incremented Salary for emp1 : " + incrementedSalary);
 		System.out.println(emp1.name + "'s total salary: " + emp1.totalSalary());
-		
-		
+
 		Employee emp2;
-		emp2 = new Employee(222,"emp2",20000.34f,"QA",(byte)26,'F',6.8f);
+		emp2 = new Employee(222, "emp2", 20000.34f, "QA", (byte) 26, 'F', 6.8f);
 		System.out.println(emp2.name + "'s company : " + emp2.COMPANY_NAME);
 		System.out.println(emp2.name);
 		/*
@@ -44,15 +41,14 @@ public class Main {
 		 * 564645.3f; emp2.age = 30; emp2.gender = 'F';
 		 */
 		emp2.displayEmpInfo();
-		
+
 		System.out.println(emp2.name + "'s incremented salary : " + emp2.incrementedSalary());
 		System.out.println(emp2.name + "'s total salary : " + emp2.totalSalary());
 		System.out.println("Company Name is : " + Employee.COMPANY_NAME);
 		/*
-		int x;
-		x = 10;*/
-		
-		
+		 * int x; x = 10;
+		 */
+
 	}
 
 }
