@@ -18,13 +18,29 @@ public class MySQLDb extends Database {
 		super(url, dbName, port, username, password);
 		this.maxConnectionPool = maxConnectionPool;
 	}
-	
+
+	@Override
+	String getDbConnection() {
+		return "connected -> MySQL";
+	}
+
+	@Override
 	void displayDatabaseInfo() {
+		System.out.println("Database Url : " + url);
+		System.out.println("Database Name : " + dbName);
+		System.out.println("Database Port : " + port);
+		System.out.println("Database Username : " + username);
+		System.out.println("Database Password : " + password);
+		System.out.println("Max Connection Pool : " + maxConnectionPool);
+		
+	}
+	
+	/*void displayDatabaseInfo() {
 		super.displayDatabaseInfo();
 		System.out.println("Max Connection Pool : " + maxConnectionPool);
 	}
 	
 	String getDbConnection() {
 		return "connected -> MySQL";
-	}
+	} */
 }

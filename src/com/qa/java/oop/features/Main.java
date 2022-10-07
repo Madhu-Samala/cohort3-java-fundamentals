@@ -14,7 +14,7 @@ public class Main {
 		System.out.println(mySQLDb.maxConnectionPool);
 		System.out.println(mySQLDb.dbName);*/
 		
-		Database database = new Database();
+		//Database database = new Database(); can't instantiate abstract classes
 		
 		OracleDb oracleDb = new OracleDb("oracldburl", "empdb", 5216, "oracleuser", "oraclepasswd", 100);
 		oracleDb.displayDatabaseInfo();
@@ -23,7 +23,8 @@ public class Main {
 		mySQLDb.displayDatabaseInfo();
 		
 		DatabaseUtil dbUtil = new DatabaseUtil();
-		System.out.println(dbUtil.getDbConnection(oracleDb));
+		System.out.println(dbUtil.getDbConnection(mySQLDb));
+		mySQLDb.displayDatabaseInfo("empdb");
 		
 	}
 
