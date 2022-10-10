@@ -48,11 +48,13 @@ public class ExceptionTest {
 
 		Employee emp;
 		try {
-			emp = Util.findById(222);
+			emp = Util.findById(666);
 			System.out.println(emp.name);
-		} catch (EmployeeNotFoundException e) {
+		} catch (EmployeeNotFoundException  e) {
 			System.out.println(e.getMessage());
 			//e.printStackTrace();
+		} finally {
+			System.out.println("Finally executed");
 		}
 
 	}

@@ -45,7 +45,7 @@ public class Employee {
 	
 	//behaviors ( methods )
 	//instance method
-	void displayEmpInfo() {
+	public void displayEmpInfo() {
 		System.out.println("Id : " + id);
 		System.out.println("Name : " + name);
 		System.out.println("Department : " + department);
