@@ -4,13 +4,13 @@ public class Employee {
 	
 	//State
 	//instance variables
-	int id;
-	String name;
-	float salary;
-	String department;
-	byte age;
-	char gender;
-	float incrementPercentage;
+	public int id;
+	public String name;
+	public float salary;
+	public String department;
+	public byte age;
+	public char gender;
+	public float incrementPercentage;
 	
 	static final String COMPANY_NAME = "QA"; // class specific
 	static final double COMPANY_REVENUE = 43534534.345;
